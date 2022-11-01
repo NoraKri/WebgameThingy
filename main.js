@@ -3,7 +3,7 @@ var cursors = 0;
 
 function getCoin(number) {
   coins += number;
-  document.getElementById("coins").innerHTML = coins;
+  document.getElementById("coins").innerHTML = coins + " coins";
 }
 
 function buyCursor() {
@@ -22,5 +22,4 @@ function buyCursor() {
 window.setInterval(function () {
   //Everything in here happens once a second
   getCoin(cursors);
-  console.log(coins);
 }, 1000);

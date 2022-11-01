@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="interface.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-    <button onclick="getCoin(1)">Get coin</button><br />
-    Coins: <span id="coins"></span><br />
-    <button onclick="buyCursor()">Buy cursor</button><br />
-    Cursors: <span id="cursors">0</span><br />
-    Cost: <span id="cursorCost">10</span><br />
+    <div id="sectionLeft">
+      <canvas id="backgroundLeftCanvas"></canvas>
+      <button id="tower" onclick="getCoin(1)">Attack!</button><br />
+    </div>
+    <div id="sectionRight">
+      <div id="coins">
+        <div id="coinsPerSecond"></div>
+      </div>
+      <button onclick="buyCursor()">Buy cursor</button><br />
+      Cursors: <span id="cursors">0</span><br />
+      Cost: <span id="cursorCost">10</span><br />
+    </div>
+
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
