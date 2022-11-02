@@ -1,5 +1,27 @@
+var Game = {};
+
 var coins = 0;
 var cursors = 0;
+const gameWindow = document.getElementById("backgroundLeftCanvas");
+const c = gameWindow.getContext("2d");
+
+gameWindow.width = 720;
+gameWindow.height = 920;
+
+c.fillStyle = "green";
+c.fillRect(0, 0, gameWindow.width, gameWindow.height);
+
+// Enemy spawning
+// Find the middle of the map (where the tower is)
+// Tower is located in the towerAnchor div.
+c.fillStyle = "red";
+c.fillRect(100, 200, 64, 64);
+
+function animateEnemy() {
+  requestAnimationFrame(animateEnemy);
+}
+
+animateEnemy();
 
 function getCoin(number) {
   coins += number;
