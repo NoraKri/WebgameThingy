@@ -1,0 +1,7 @@
+Plan MVP:
+
+You are a lonely tower. Enemies encroach on your territory constantly. You can shoot arrows from your tower. Killing enemies earns you money, which you can use to buy auto-firing arrows.
+
+Enemies: Spawn at the edge of the playable area, moves in a straight line towards the tower. Deals damage once they reach the tower's hitbox.
+
+Arrows: Fire towards the nearest enemy, deals a set amount of damage. The damaged enemy displays damage taken over their head

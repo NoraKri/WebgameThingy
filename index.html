@@ -11,16 +11,15 @@
     <div id="sectionLeft">
       <canvas id="backgroundLeftCanvas"></canvas>
       <div id="towerAnchor">
-        <button id="tower" onclick="getCoin(1)">Attack!</button>
+        <button id="tower" onclick="attackEnemy(3)">Attack!</button>
       </div>
     </div>
     <div id="sectionRight">
-      <div id="coins">
-        <div id="coinsPerSecond"></div>
-      </div>
-      <button onclick="buyCursor()">Buy cursor</button><br />
-      Cursors: <span id="cursors">0</span><br />
-      Cost: <span id="cursorCost">10</span><br />
+      <div id="coins"></div>
+      <button onclick="buyArrow()">Buy arrow</button><br />
+      Cursors: <span id="arrow">0</span><br />
+      Cost: <span id="arrowCost">10</span><br />
+      Enemy: <span id="enemy">20</span>
     </div>
 
     <script type="text/javascript" src="main.js"></script>
